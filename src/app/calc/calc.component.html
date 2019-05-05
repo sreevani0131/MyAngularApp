@@ -1,0 +1,15 @@
+
+  <div>
+    <input placeholder="x" #x [hidden]=stdis />
+    <input placeholder="y" #y [hidden]=stdis />
+    <input placeholder="z" #z [hidden]=stdis />
+    <input [(ngModel)]="res" placeholder="Result" [hidden]=stdis />
+  </div>
+  <div cdkDrop (cdkDropDropped)="dropped($event)">
+
+    <button class="btn btn-primary" (click)="add(x.value,y.value)" cdkDrag>Add</button>
+    <button class="btn btn-primary" (click)="subtract(x.value,y.value)" cdkDrag>Subtract</button>
+    <button class="btn btn-primary" (click)="foo(x.value,y.value,z.value)" cdkDrag>Foo</button>
+    <button class="btn btn-primary" (click)="doSomethingComplicated(x.value)" cdkDrag>doSomething</button>
+  </div>
+

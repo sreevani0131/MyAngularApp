@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\aboutus",
+    "\\src\\app\\addemp",
+    "\\src\\app\\calc",
+    "\\src\\app\\employee",
+    "\\src\\app\\todo"
+  ],
+  "SelectedNode": "\\src\\app\\calc\\calc.component.ts",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,13 @@
+
+  <form [formGroup]="authForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-contols">
+      <div [formGroupName]="'data'">
+        <p>Username</p>
+        <input type="text" class="form-contol" [formControlName]="'username'" />
+        <p>Password</p>
+        <input type="text" class="form-contol" [formControlName]="'password'" />
+        <button class="btn btn-primary">Submit</button>
+       </div>
+     </div>
+  </form>
+

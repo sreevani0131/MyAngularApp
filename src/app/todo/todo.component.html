@@ -1,0 +1,12 @@
+
+  <input type="text" [(ngModel)]="todoVal" class="text text-primary" required/><button class="btn btn-primary" (click)="addTodo()">Add</button>
+  <ul >
+    <li *ngFor="let todo of todolist; let i=index">
+      {{todo.name}} --
+      <button class="btn" (click)="updateTodo(i,todo.status)">{{todo.status}}</button>
+      <button class="btn btn-primary" (click)="deleteTodo(i)">delete</button>
+    </li>
+   </ul>
+<button [routerLink]="['/aboutus']">Home</button>
+
+
